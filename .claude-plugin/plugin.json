@@ -1,0 +1,19 @@
+{
+  "name": "banquish",
+  "displayName": "Banquish",
+  "version": "0.1.0",
+  "description": "Answer with the live web: Claude composes live parts of real pages into a Workspace in the Banquish app for macOS.",
+  "author": {
+    "name": "GeonHyeok Boo",
+    "email": "hello@banquish.space",
+    "url": "https://banquish.space"
+  },
+  "homepage": "https://banquish.space",
+  "repository": "https://github.com/banquish-app/banquish-plugin",
+  "license": "MIT",
+  "keywords": ["browser", "web", "live", "comparison", "prices", "dashboard", "macos", "mcp"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/banquish-app/banquish-plugin#readme",
+  "supportUrl": "https://github.com/banquish-app/banquish-plugin/issues",
+  "privacyPolicyUrl": "https://banquish.space/privacy"
+}

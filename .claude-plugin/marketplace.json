@@ -1,0 +1,17 @@
+{
+  "name": "banquish",
+  "description": "Banquish for Claude Code: answer with live parts of real pages, composed in the Banquish app.",
+  "owner": {
+    "name": "GeonHyeok Boo",
+    "email": "hello@banquish.space",
+    "url": "https://banquish.space"
+  },
+  "plugins": [
+    {
+      "name": "banquish",
+      "source": "./",
+      "description": "Answer with the live web: Claude composes live parts of real pages into a Workspace in the Banquish app for macOS.",
+      "category": "productivity"
+    }
+  ]
+}

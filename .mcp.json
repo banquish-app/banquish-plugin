@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "banquish": {
+      "command": "${HOME}/.banquish/bin/banquish",
+      "args": ["mcp"]
+    }
+  }
+}
