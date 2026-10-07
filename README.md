@@ -53,7 +53,7 @@ See [banquish.space/privacy](https://banquish.space/privacy) for what Banquish a
 
 ## Support
 
-Open an issue in this repository, or write to [hello@banquish.space](mailto:hello@banquish.space).
+Open an issue in this repository, or write to [hello@banquish.space](mailto:hello@banquish.space). News and build notes: [@gunhboo](https://x.com/gunhboo) on X.
 
 ## License
 
