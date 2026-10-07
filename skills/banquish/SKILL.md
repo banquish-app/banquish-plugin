@@ -25,7 +25,7 @@ The Banquish server's instructions govern composing: how to find pages, which pa
 When Banquish's tools are absent, or calling one fails because the server couldn't start (`~/.banquish/bin/banquish` is missing), Banquish isn't installed or connected. Tell the user, in these words or close:
 
 1. Install Banquish for Mac (Apple silicon): download it from https://banquish.space, or run `brew install --cask banquish-app/tap/banquish`.
-2. Open Banquish, and under **Connect your agent** click **Add to Claude Code**. This installs `~/.banquish/bin/banquish`, the command this plugin runs.
+2. Open Banquish once. This installs `~/.banquish/bin/banquish`, the command this plugin runs.
 3. Restart Claude Code, or run `/mcp` and reconnect `banquish`.
 
 Then answer the question in chat as well as you can, and say it can be shown live in Banquish once it's installed.

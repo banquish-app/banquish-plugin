@@ -8,10 +8,10 @@ Banquish lets your agent answer with the live web. Ask a question, and instead o
 
 First install the Banquish app:
 
-- Download it from [banquish.space](https://banquish.space) (the download is coming soon), or
-- with Homebrew (coming soon): `brew install --cask banquish-app/tap/banquish`
+- Download it from [banquish.space](https://banquish.space), or
+- with Homebrew: `brew install --cask banquish-app/tap/banquish`
 
-Open Banquish once. Its **Connect your agent** card sets up the agents below.
+Open Banquish once. Each launch installs `~/.banquish/bin/banquish`, the command agents run, and its **Connect your agent** card sets up the agents below.
 
 ### Claude Code
 
@@ -22,7 +22,7 @@ Add this plugin:
 /plugin install banquish@banquish
 ```
 
-Then, in Banquish, click **Add to Claude Code** under Connect your agent. That installs `~/.banquish/bin/banquish`, the command the plugin runs. Restart Claude Code, and ask something like "compare the three cheapest flights to Lisbon next Friday, show it in Banquish".
+If you haven't opened Banquish since installing it, open it once: that installs `~/.banquish/bin/banquish`, the command the plugin runs. Restart Claude Code, and ask something like "compare the three cheapest flights to Lisbon next Friday, show it in Banquish".
 
 The plugin adds:
 
