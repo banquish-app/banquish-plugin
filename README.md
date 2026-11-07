@@ -22,14 +22,20 @@ Add this plugin:
 /plugin install banquish@banquish
 ```
 
-If you haven't opened Banquish since installing it, open it once: that installs `~/.banquish/bin/banquish`, the command the plugin runs. Restart Claude Code, and ask something like "compare the three cheapest flights to Lisbon next Friday, show it in Banquish".
+Then pair it with Banquish once:
+
+1. Open Banquish, and keep it open while you use it.
+2. In Claude Code, run `/mcp`, choose `banquish`, then Authenticate. A Banquish page opens in your browser and asks for a code.
+3. In Banquish, choose **File › Connect Claude…**, type the pairing code it shows into that page, and choose **Pair**.
+
+Then ask something like "compare the three cheapest flights to Lisbon next Friday, show it in Banquish".
 
 The plugin adds:
 
-- the `banquish` MCP server, which runs `~/.banquish/bin/banquish mcp`;
-- the `banquish` skill, which tells Claude when to answer in Banquish and how to help you install it when it's missing.
+- the `banquish` MCP server, at Banquish's Relay, `https://mcp.banquish.space/mcp`, which passes Claude Code's calls to the Banquish app on your Mac;
+- the `banquish` skill, which tells Claude when to answer in Banquish and how to help you set it up when it's missing.
 
-If you clicked Add to Claude Code before installing the plugin, that's fine: Claude Code sees both run the same command and connects once.
+**Already clicked Add to Claude Code in Banquish?** Then you don't need this plugin's server: that connection runs on your Mac without the Relay, and it's faster. Use one or the other, so Claude Code doesn't see Banquish's tools twice.
 
 ### Codex
 
@@ -45,7 +51,7 @@ In Banquish, open **Any other MCP client** under Connect your agent and click **
 
 ## What runs on your machine
 
-The plugin contains no code. Its MCP server is the `~/.banquish/bin/banquish` script that Banquish installs, which relays the agent's MCP messages to the Banquish app on your Mac and opens Banquish if it's closed. The plugin itself sends nothing anywhere. Banquish opens the pages your agent asks for, as your browser would.
+The plugin contains no code and runs nothing on your Mac. Its MCP server is Banquish's Relay, which passes each call to the Banquish app on your Mac and back, and keeps none of what passes through it. Banquish then opens the pages your agent asks for, signed in as you. When your Mac is asleep or Banquish is closed, calls fail until you open it again.
 
 ## Privacy
 

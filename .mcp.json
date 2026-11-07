@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "banquish": {
-      "command": "${HOME}/.banquish/bin/banquish",
-      "args": ["mcp"]
+      "type": "http",
+      "url": "https://mcp.banquish.space/mcp"
     }
   }
 }
