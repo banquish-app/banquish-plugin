@@ -20,12 +20,14 @@ Answer in chat when the answer is a fact, a summary or code.
 
 The Banquish server's instructions govern composing: how to find pages, which parts to take, and how to lay out and label the Workspace. They arrive with its tools. Follow them over anything here.
 
-## Install Banquish when its tools are missing
+## Set up Banquish when its tools are missing
 
-When Banquish's tools are absent, or calling one fails because the server couldn't start (`~/.banquish/bin/banquish` is missing), Banquish isn't installed or connected. Tell the user, in these words or close:
+This plugin reaches Banquish through its Relay at `https://mcp.banquish.space/mcp`, which passes your calls to the Banquish app on the user's Mac. When Banquish's tools are absent, or a call says it needs sign-in, Banquish isn't installed or isn't paired yet. Tell the user, in these words or close:
 
-1. Install Banquish for Mac (Apple silicon): download it from https://banquish.space, or run `brew install --cask banquish-app/tap/banquish`.
-2. Open Banquish once. This installs `~/.banquish/bin/banquish`, the command this plugin runs.
-3. Restart Claude Code, or run `/mcp` and reconnect `banquish`.
+1. Install Banquish for Mac (Apple silicon, macOS 13 or later): download it from https://banquish.space, or run `brew install --cask banquish-app/tap/banquish`. Open it, and keep it open while you use it.
+2. In Claude Code, run `/mcp`, choose `banquish` and then Authenticate. A Banquish page opens in the browser and asks for a code.
+3. In Banquish, choose File › Connect Claude…. Type the pairing code it shows into that page, then choose Pair.
 
-Then answer the question in chat as well as you can, and say it can be shown live in Banquish once it's installed.
+When a call says Banquish can't be reached, the Mac is asleep or Banquish is closed: ask the user to open Banquish and try again.
+
+Then answer the question in chat as well as you can, and say it can be shown live in Banquish once it's set up.
